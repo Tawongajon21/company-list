@@ -12,7 +12,7 @@ function AuthForm() {
   return (
     <>
 {
-    selectLoginMethod ?  <
+    <
     Auth
     
     supabaseClient={supabase}
@@ -29,18 +29,9 @@ function AuthForm() {
             className:"bg-gray-700 border-gray-600 text-white"
         }
     }}
-/> : <NormalLogin/>
+/> 
 }
-{
-    selectLoginMethod ?  <p>
-    
-    <span onClick={()=>setSelectLoginMethod(!selectLoginMethod)} style={{
-     color:"blue",
-     cursor:"pointer"
-    }}>
-    Login
-     </span>  using Email and Password 
- </p>  :  <p>
+ <p>
     
  <span onClick={()=>setSelectLoginMethod(!selectLoginMethod)} style={{
   color:"blue",
@@ -49,7 +40,7 @@ function AuthForm() {
  Login
   </span>  using magic link
 </p>
-}  
+
 
     </>
  
